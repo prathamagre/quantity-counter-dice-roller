@@ -9,12 +9,12 @@ This repository contains two web-based tools:
 
 ### Product Quantity Counter
 
-![Product Quantity Counter](./output 1.png)
+![Product Quantity Counter](./output1.png)
 
 *Description: The Product Quantity Counter tool displays a product with an adjustable quantity and calculates the total price.*
 
 ### Dice Roller
 
-![Dice Roller](output2.png)
+![Dice Roller](./output2.png)
 
 *Description: The Dice Roller tool allows you to roll a dice, changing the dice face image to show a random result.*
