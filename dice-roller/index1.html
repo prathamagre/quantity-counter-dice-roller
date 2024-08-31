@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./../dice-roller/style1.css">
 </head>
+
 <body>
     <h1 class="heading">
         <u>Dice Roller</u>
     </h1>
-    <div class="product">
-        <div class="product-img">
-            <img src="./img1/dice.png" class="img">
+    <div class="dice-container">
+
+        <div class="product">
+            <div class="product-img">
+                <img src="./img1/dice.png" class="img" id="img-dice">
+            </div>
+            <button class="roll-btn" onclick="roll()">Roll</button>
         </div>
     </div>
+    <a href="./../index.html">
+        <div class="dice-btn">
+            Quantity Counter
+        </div>
+    </a>
+
+    <script>
+        function roll() {
+            const imgElement = document.getElementById("img-dice")
+            const randomNumber = Math.floor(Math.random() * (7 - 1)) + 1
+
+            switch (randomNumber) {
+                case 1:
+                    imgElement.src = "./img1/1.png"
+                    break
+                    case 2:
+                    imgElement.src = "./img1/2.png"
+                    break
+                    case 3:
+                    imgElement.src = "./img1/3.png"
+                    break
+                    case 4:
+                    imgElement.src = "./img1/4.png"
+                    break
+                    case 5:
+                    imgElement.src = "./img1/5.png"
+                    break
+                    case 6:
+                    imgElement.src = "./img1/6.png"
+                    break
+            }
+        }
+    </script>
 </body>
+
 </html>

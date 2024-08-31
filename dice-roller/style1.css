@@ -1,0 +1,67 @@
+body{
+    background:url("./img1/bg-img.jpg");
+    background-size:cover
+}
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+    border: solid;
+    width: 20%;
+    margin: 10px auto;
+    background-color: aliceblue;
+}
+
+.dice-container{
+    background-color: rgb(225, 223, 223);
+    border: solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 30%;
+    margin: 30px auto;
+    padding:  15px 20px;
+    text-align: center;
+}
+
+.img{
+    height: 300px; 
+}
+
+.roll-btn{
+    border:none;
+    width: 80px;
+    text-align: center;
+    background-color: rgb(226, 95, 95);
+    color: aliceblue;
+    box-shadow: 0 0px 10px 0px gray;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding:10px 20px;
+}
+
+.roll-btn:hover{
+    color: rgb(226, 95, 95);
+    background-color: aliceblue;
+    border: rgb(226, 95, 95) solid;
+}
+
+.dice-btn{
+    margin: 10px auto;
+    width: 200px;
+    font-size: 25px;
+    border:black solid;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.dice-btn:hover{
+    color: black;
+    background-color: aliceblue;
+}
