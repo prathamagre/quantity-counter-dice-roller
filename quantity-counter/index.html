@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantity Countr & Dice Roller</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 class="heading">
+        <u>Product Quantity Counter</u>
+    </h1>
+    <div class="product-container">
+        <div class="Product-name">Yonex Badminton Racket</div>
+        <div class="product">
+            <div class="product-img">
+                <img src="./img/product-img.jpg" class="img">
+            </div>
+            <div class="product-details">
+                Price : 1200/- <br>
+                Quantity :<span id="quantity-count">1</span><br>
+                Total price : <span id="total-price">1200/-</span>
+            </div>
+        </div>
+        <div class="btn-container">
+            <div class="counter-btn" onclick="handleQuantityChange('dec')">-</div>
+            <div class="value" id="quantity-text">1</div>
+            <div class="counter-btn" onclick="handleQuantityChange('inc')">+</div>
+        </div>
+        <div class="add-btn">Add to cart</div>
+    </div>
+    <div class="dice-btn">
+        Dice Roller
+    </div>
+
+    <script>
+        const pricePerUnit = 1200;
+
+        function handleQuantityChange(action){
+            const quantityElement = document.getElementById("quantity-text");
+            const  quantityCountElement = document.getElementById("quantity-count");
+            const totalPriceElement = document.getElementById("total-price");
+
+            let quantity = parseInt(quantityElement.innerText)
+
+            if (action === 'inc') {
+                quantity++;
+            } else if (action === 'dec') {
+                if (quantity > 1) {
+                    quantity--;
+                }
+            }
+
+            quantityElement.innerText = quantity;
+            quantityCountElement.innerText = `${quantity}`;
+            totalPriceElement.innerText = `${pricePerUnit * quantity}/-`;
+        
+        }
+    </script>
+</body>
+
+</html>
