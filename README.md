@@ -18,5 +18,5 @@ This repository contains two web-based tools:
 
 
 ![Dice Roller](./output%202.png)
-commit -m ""
+
 *Description: The Dice Roller tool allows you to roll a dice, changing the dice face image to show a random result.*
