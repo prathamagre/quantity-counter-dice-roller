@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+}
+
+.heading{
+    color: aliceblue;
+    text-align: center;
+}
+
+.product-container{
+    background-color: aliceblue;
+    border: solid white;
+    border-radius: 10px;
+    width: 40%;
+    margin: 30px auto;
+    padding:  5px 20px;
+}
+
+.Product-name{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.product{
+    display: flex;
+    justify-content:center;
+}
+
+.product-img{
+    border: solid black;
+    margin-right: 30px;
+}
+.img{
+    height: 200px;
+    width: 100px;
+    object-fit:cover;
+    margin: 10px 50px;
+    border-radius: 10px;
+
+}
+
+.product-details{
+    
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.counter-btn{
+    border:none;
+    width: 80px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 0 0px 10px 0px gray;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.value{
+    border: solid white;
+    background-color: aliceblue;
+    color: black;
+    width: 150px;
+    margin: 0 70px;
+    box-shadow: 0 0px 10px 0px gray;
+    text-align: center;
+}
+
+.dice-btn{
+    margin: 10px auto;
+    width: 100px;
+    font-size: 20px;
+    color: aliceblue;
+    border: white solid;
+    padding: 10px;
+    cursor: pointer;
+}
