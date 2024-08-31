@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantity Counter</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./quantity-counter/style.css" />
 </head>
 
 <body>
@@ -16,7 +16,7 @@
         <div class="Product-name">Yonex Badminton Racket</div>
         <div class="product">
             <div class="product-img">
-                <img src="./img/product-img.jpg" class="img">
+                <img src="./quantity-counter/img/product-img.jpg" class="img">
             </div>
             <div class="product-details">
                 Price : 1200/- <br>
@@ -31,16 +31,20 @@
         </div>
         <div class="add-btn">Add to cart</div>
     </div>
+    
+    <a href="./../dice-roller/index1.html">
     <div class="dice-btn">
         Dice Roller
     </div>
+    </a>
+
 
     <script>
         const pricePerUnit = 1200;
 
-        function handleQuantityChange(action){
+        function handleQuantityChange(action) {
             const quantityElement = document.getElementById("quantity-text");
-            const  quantityCountElement = document.getElementById("quantity-count");
+            const quantityCountElement = document.getElementById("quantity-count");
             const totalPriceElement = document.getElementById("total-price");
 
             let quantity = parseInt(quantityElement.innerText)
@@ -56,7 +60,7 @@
             quantityElement.innerText = quantity;
             quantityCountElement.innerText = `${quantity}`;
             totalPriceElement.innerText = `${pricePerUnit * quantity}/-`;
-        
+
         }
     </script>
 </body>
